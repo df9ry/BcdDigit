@@ -2,11 +2,22 @@
 #define BCDWIDGET_HPP
 
 #include <QWidget>
+#if 0
+#include <QtCore/QtGlobal>
+
+#if defined BCDDIGIT_IMPLEMENTATION
+#  define QDESIGNER_WIDGET_EXPORT Q_DECL_EXPORT
+#else
+#  define QDESIGNER_WIDGET_EXPORT Q_DECL_IMPORT
+#endif
+#else
+#  define QDESIGNER_WIDGET_EXPORT
+#endif
 
 class QLineEdit;
 class QPushButton;
 
-class BcdWidget : public QWidget
+class QDESIGNER_WIDGET_EXPORT BcdWidget : public QWidget
 {
     Q_OBJECT
 

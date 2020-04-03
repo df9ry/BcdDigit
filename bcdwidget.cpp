@@ -100,8 +100,6 @@ void BcdWidget::setMode(Mode mode)
         m_mode = HEX;
         field->setInputMask("H");
         break;
-    default:
-        break;
     } // end switch //
 }
 

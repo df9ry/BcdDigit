@@ -6,7 +6,7 @@
 class BcdWidgetPlugin : public QObject, public QDesignerCustomWidgetInterface
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QDesignerCustomWidgetInterface")
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QDesignerCustomWidgetInterface" FILE "bcdwidget.json")
     Q_INTERFACES(QDesignerCustomWidgetInterface)
 
 public:

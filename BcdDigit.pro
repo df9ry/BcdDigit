@@ -4,6 +4,7 @@ TEMPLATE    = lib
 TARGET      = $$qtLibraryTarget($$TARGET)
 target.path = $$[QT_INSTALL_PLUGINS]/designer
 INSTALLS    += target
+DEFINES     += BCDDIGIT_IMPLEMENTATION=1
 
 HEADERS     = bcdwidgetplugin.hpp
 SOURCES     = bcdwidgetplugin.cpp
