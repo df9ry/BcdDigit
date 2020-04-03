@@ -1,0 +1,8 @@
+#GIT Ignore file
+
+*~
+*.user
+*/Thumbs.db
+build/
+build-release/
+.vscode/
